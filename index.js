@@ -27,7 +27,51 @@ const k_muppet = {
 
 // Strings
 
-// 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ")
+
+const [Bessie, , Dolly, Babe, Little] = farmAnimals.split(" ")
+
+const [black_and_white, , black, pink] = farmAnimals.split(" ")
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors
+
+const [r,o,y,g,b,,v] = colors
+
+const[,,,,,indg,] = colors
+
+
+const {name, color, song, job, partner} = muppet
+
+const {song_2, song_4} = k_muppet.k_album.the_muppet_movie
+
+const {k_job, k_partner} = k_muppet
+
+// const k_muppet = {
+//   k_name: 'Kermit',
+//   k_color: 'green',
+//   k_album: {
+//     the_muppet_movie: {
+//       song_1: 'Rainbow Connection',
+//       song_2: 'Moving Right Along',
+//       song_3: 'Never Before, Never Again',
+//       song_4: 'I Hope That Something Better Comes Along',
+//     },
+//   },
+//   k_job: 'Host of The Muppet Show',
+//   k_partner: 'Miss Piggy'
+// };
+
+
+
+// expect(song_2).to.exist
+// expect(song_2).to.equal("Moving Right Along")
+// expect(song_4).to.exist
+// expect(song_4).to.equal("I Hope That Something Better Comes Along")
+// expect(k_job).to.exist
+// expect(k_job).to.equal("Host of The Muppet Show")
+// expect(k_partner).to.exist
+// expect(k_partner).to.equal("Miss Piggy")
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
 
